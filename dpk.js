@@ -15,9 +15,9 @@ exports.deterministicPartitionKey = (inputData) => {
     }
   }
 
-// Check:
-// 1. partitonKey is defined, if not set it to trivial partition key
-// 2. if partitionKey is defined then check if its is string. If not then convert/cast it to its string form.
+  // Check:
+  // 1. partitonKey is defined, if not set it to trivial partition key
+  // 2. if partitionKey is defined then check if its is string. If not then convert/cast it to its string form.
   if (!partitionKey) {
     partitionKey = TRIVIAL_PARTITION_KEY;
   }
